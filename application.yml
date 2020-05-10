@@ -1,15 +1,19 @@
 spring:
   profiles:
     active:
-    - dev
+      - dev
 ---
 spring:
   profiles: dev     #开发环境
-  application: 
-    name: microservicecloud-config-atguigu-dev
+  application:
+    name: seckill-config-dev
 ---
 spring:
   profiles: test   #测试环境
-  application: 
-    name: microservicecloud-config-atguigu-test
-#  请保存为UTF-8格式
+  application:
+    name: seckill-config-test
+---
+spring:
+  profiles: test   #生产环境
+  application:
+    name: seckill-config-prod
